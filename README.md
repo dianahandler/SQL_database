@@ -42,6 +42,22 @@ Our ERD shows the flow of information from one table to another, as exhibited be
 
 <img width="958" alt="Screen Shot 2022-06-07 at 10 51 48 AM" src="https://user-images.githubusercontent.com/82029390/172411615-25d40070-f4ba-4765-a246-64e0555f223a.png">
 
+There are three types of ERDs: conceptual, logical, and physical. Each one builds upon the other. We need the conceptual ERD to build a logical ERD and we need the logical ERD to build a physical ERD.
+
+## Mapping Our Database
+
+We will create a map that ill show us each table in the database and the flow of data from one table to another. This allows us to easilly reference our data without having to access it. This is our data modeling process. We will use an online toll called Quick Database Diagrams(Quick DBD)
+
+Conceptual diagram contains table name and column headers. This is simply the concept of the diagram. 
+Logical diagrams contain all of the same information as the conceptual however it also includes data types and primary keys.
+
+We use "varchar" in a given column because the fields contain characters of varying length. "pk" indicates that the column is a primary key
+
+We create our final diagram
+<img width="1346" alt="Screen Shot 2022-06-07 at 11 40 24 AM" src="https://user-images.githubusercontent.com/82029390/172423142-9e91a6e8-c877-4460-800b-aca1151efbd6.png">
+
+
+We now open PgAdmin to create our database. We create our first table for the departments CSV. By Adding "NOT NULL," we make sure to not import any data with empty fields as to maintain our data integrity.
 
 
 
