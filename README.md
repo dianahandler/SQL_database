@@ -64,11 +64,23 @@ When this query is executed, the following output appears:
 
 <img width="539" alt="Screen Shot 2022-06-08 at 12 46 16 PM" src="https://user-images.githubusercontent.com/82029390/172672082-6b06ae9c-7cd6-414d-9ffa-77125a925a9e.png">
 
-The above table indicates that the columns and data types have been successfully created and all that is left is to import the data.
+The above table indicates that the columns and data types have been successfully created and all that is left is to import the data. It's generally good practice to check that all tables have been succesfully created lest we wish to run into any errors along the way! 
 
 ## Importing the Data
 
-Now that we have created the six tables modeled after our ERD, the CSV data must be imported.
+Now that we have created the six tables modeled after our ERD, the CSV data must be imported. First, we import our departments csv. To check that the data has successfully been imported, we can run our code from above for the departments data.
+
+<img width="395" alt="Screen Shot 2022-06-08 at 12 54 12 PM" src="https://user-images.githubusercontent.com/82029390/172673437-69a54d46-17b4-4424-b1c6-917e73d2f495.png">
+
+All looks quite well here. Let us now try to import the dept_emp data...
+
+<img width="714" alt="Screen Shot 2022-06-08 at 12 29 08 PM" src="https://user-images.githubusercontent.com/82029390/172673696-25cc41f9-4095-47c8-95a5-1206d0bfc099.png">
+
+......oh my! Let's troubleshoot shall we?
+
+## Troubleshooting 
+
+
 
 
 
