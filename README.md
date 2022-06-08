@@ -83,8 +83,8 @@ All looks quite well here. Let us now try to import the dept_emp data...
 It appears that this csv was not successful in importing. Let's take a closer look at some of the elements of this error notification:
 
 ->  'dept_emp' violates foreign key constraint 'dept_emp_emp_no_fkey' 
-(Ironically, reading error messages for code can sometimes be more difficult to understand than the code itself but it is always a good idea to parse out the objects mentioned that you can immediately reference. Here, we draw our attention to 'dept_emp_emp_no_fkey')
 
+(Ironically, reading error messages for code can sometimes be more difficult to understand than the code itself but it is always a good idea to parse out the objects mentioned that you can immediately reference. Here, we draw our attention to 'dept_emp_emp_no_fkey')
 
 -> Key(emp_no)=(10001) is not present in table "employees"
 
