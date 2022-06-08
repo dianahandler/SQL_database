@@ -50,14 +50,23 @@ We will create a map that ill show us each table in the database and the flow of
 
 Conceptual diagram contains table name and column headers. This is simply the concept of the diagram. 
 Logical diagrams contain all of the same information as the conceptual however it also includes data types and primary keys.
+"Varchar" is used in a given column because the fields contain characters of varying length. "pk" indicates that the column is a primary key
 
-We use "varchar" in a given column because the fields contain characters of varying length. "pk" indicates that the column is a primary key
-
-We create our final diagram
+The final diagram:
 <img width="1346" alt="Screen Shot 2022-06-07 at 11 40 24 AM" src="https://user-images.githubusercontent.com/82029390/172423142-9e91a6e8-c877-4460-800b-aca1151efbd6.png">
 
 
-We now open PgAdmin to create our database. We create our first table for the departments CSV. By Adding "NOT NULL," we make sure to not import any data with empty fields as to maintain our data integrity.
+We now open PgAdmin to create our database. We create our first table for the departments CSV. By Adding "NOT NULL," we make sure to not import any data with empty fields as to maintain our data integrity. It is also critical to add foreign and primary keys so that the relationship between each table is established in our database. We can additionally confirm that the table has been created ith the following code:
+<img width="202" alt="Screen Shot 2022-06-08 at 12 45 56 PM" src="https://user-images.githubusercontent.com/82029390/172671966-542290c1-322c-4191-ad14-8f3cf8d773f0.png">
+
+When this query is executed, the following output appears:
+<img width="539" alt="Screen Shot 2022-06-08 at 12 46 16 PM" src="https://user-images.githubusercontent.com/82029390/172672082-6b06ae9c-7cd6-414d-9ffa-77125a925a9e.png">
+
+The above table indicates that the columns and data types have been successfully created and all that is left is to import the data.
+
+## Importing the Data
+
+Now that we have created the six tables modeled after our ERD, the CSV data must be imported.
 
 
 
