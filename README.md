@@ -81,8 +81,11 @@ All looks quite well here. Let us now try to import the dept_emp data...
 ## Troubleshooting 
 
 It appears that this csv was not successful in importing. Let's take a closer look at some of the elements of this error notification:
+
 ->  'dept_emp' violates foreign key constraint 'dept_emp_emp_no_fkey' 
 (Ironically, reading error messages for code can sometimes be more difficult to understand than the code itself but it is always a good idea to parse out the objects mentioned that you can immediately reference. Here, we draw our attention to 'dept_emp_emp_no_fkey')
+
+
 -> Key(emp_no)=(10001) is not present in table "employees"
 
 Our foreign key "emp_no" seems to violate the foreign key constraint. While this tells us there is something off about this foreign key we have established in our dept_emp table, the second line allows us to further deduce the issue. The first row of the dept_emp table we just attempted to import( (emp_no)=(10001) ) is not present in our employees table. If we run SELECT * FROM employees; to view our employees table, we see that because the csv has not yet been imported, the table is blank.
