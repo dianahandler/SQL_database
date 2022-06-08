@@ -4,9 +4,9 @@
 
 This repository will serve to dive deeper into data modeling, engineering, and analysis. We will be creating entity relationship diagrams(ERDs), import data into a database, troubleshoot any errors that may arise, and create queries to answer questions about our data. 
 
-SQL helps us learn how different data relates to one another. For this module we will use postgres and pgAdmin.
+For this module we will use postgres and pgAdmin.
 
-PH is a large company with thousands of employees. Ph looking towards future in two ways.  offering retirement packages for those who meet the criteria. They are also thinking which positions will need to be filled in the near future. The upcoming retirement numbers will leave thousands of open positions. We must find answers to the following questions:
+PH is a large company with thousands of employees. They are looking towards future in two ways: 1) offering retirement packages for those who meet the criteria 2)Determining which positions will need to be filled in the near future. The upcoming retirement numbers will leave thousands of open positions. We must find answers to the following questions:
 - Who will be retiring in the next few years?
 - How many positions will PH need to fill?
 
