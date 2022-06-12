@@ -94,7 +94,25 @@ When we created our dept_emp table, we established a foreign key "emp_no" that r
 
 Thus it is **critical** to pay close attention to the order in which we load in our data.
 
-Once we import our employees csv data, we can import the dept_emp with no errors.
+Once we import our employees csv data, we can import the dept_emp with no errors. We also import the rest of our tables.
+
+### Query Dates
+
+We are given the information that anyone born between 1952 and 1955 will likely retire soon. So we must build a conditional query involving employee birthdays.  
+
+We build the following query:
+
+<img width="499" alt="Screen Shot 2022-06-12 at 3 53 35 PM" src="https://user-images.githubusercontent.com/82029390/173250922-bf1097ba-6fb2-4aee-88c4-3eedf63dadf1.png">
+
+We count the number of retiring employees (born between 1952 and 1955 and hired between 1985 and 1988) with the COUNT() method
+
+<img width="482" alt="Screen Shot 2022-06-12 at 3 54 33 PM" src="https://user-images.githubusercontent.com/82029390/173251057-593ff8e4-dfe1-4a38-a520-8f92ebe92e21.png">
+
+Now we want to export this information as a csv however only data saved as a table can be easily exported. The modification of the original query is required and we save the data into a new table.
+
+<img width="483" alt="Screen Shot 2022-06-12 at 3 55 32 PM" src="https://user-images.githubusercontent.com/82029390/173251076-e02f662a-f9a6-4a51-8498-0a5fb5e75582.png">
+
+
 
 
 
